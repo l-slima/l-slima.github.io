@@ -19,12 +19,13 @@ body {
   position: relative;
   height: 100vh;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364),
-              url('https://picsum.photos/1920/1080?blur=2') center/cover no-repeat;
+              url('https://source.unsplash.com/random/1920x1080/?technology,data,math') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
+
 .hero .overlay {
   position: absolute;
   inset: 0;
