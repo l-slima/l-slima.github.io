@@ -5,22 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lucas de Souza Lima - Portfólio</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- AOS (animações ao rolar) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <!-- Hero -->
   <header class="hero">
     <div class="overlay"></div>
-    <div class="hero-content">
+    <div class="hero-content" data-aos="fade-up">
       <h1>Lucas de Souza Lima</h1>
       <h2>Matemático & Cientista de Dados</h2>
-      <p>São Paulo - SP</p>
       <a href="#projetos" class="btn">Ver Projetos</a>
     </div>
   </header>
 
   <main class="container">
     <!-- Sobre -->
-    <section class="intro">
+    <section class="intro" data-aos="fade-up">
       <h2>Sobre mim</h2>
       <p>
         Sou mestre e bacharel em Matemática pela UNESP. Atualmente, sou doutorando em Matemática pela USP e faço MBA em Finanças e Controladoria pela USP-ESALQ.<br><br>
@@ -29,7 +31,7 @@
     </section>
 
     <!-- Competências -->
-    <section class="competencias">
+    <section class="competencias" data-aos="fade-up">
       <h2>Competências</h2>
       <div class="skills">
         <span>Python</span>
@@ -44,22 +46,19 @@
     </section>
 
     <!-- Projetos -->
-    <section id="projetos" class="projetos">
+    <section id="projetos" class="projetos" data-aos="fade-up">
       <h2>Projetos</h2>
       <div class="cards">
-        <!-- Diabetes -->
         <div class="card">
           <h3>Detecção de Diabetes</h3>
           <p>Modelos de aprendizado de máquina para prever casos de diabetes com dados clínicos.</p>
           <a href="https://github.com/l-slima/detec-o-diabetes-ml" target="_blank">Ver no GitHub</a>
         </div>
-        <!-- Desafio ICT Itaú -->
         <div class="card">
           <h3>Desafio ICT Itaú</h3>
           <p>Projeto desenvolvido para desafio do Itaú, envolvendo análise de dados e modelagem preditiva.</p>
           <a href="https://github.com/l-slima/Desafio-ICT-Itau" target="_blank">Ver no GitHub</a>
         </div>
-        <!-- Discussão Ouro -->
         <div class="card">
           <h3>Discussão Ouro</h3>
           <p>Análise de dados relacionados ao mercado de ouro, discutindo tendências e insights financeiros.</p>
@@ -69,7 +68,7 @@
     </section>
 
     <!-- Contato -->
-    <section class="contato">
+    <section class="contato" data-aos="fade-up">
       <h2>Contato</h2>
       <p>Email: <a href="mailto:ls.lima@usp.br">ls.lima@usp.br</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/lucas-lima-8832b0267/" target="_blank">/lucas-lima-8832b0267</a></p>
@@ -80,5 +79,14 @@
   <footer>
     <p>&copy; 2025 Lucas de Souza Lima</p>
   </footer>
+
+  <!-- Script do AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
