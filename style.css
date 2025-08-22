@@ -1,120 +1,148 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+  --bg: #181818;
+  --accent: #3db4f2; /* Azul destaque */
+  --text: #fff;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background: #181818; /* Fundo escuro neutro */
-    color: #fff;
-    font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
 }
 
+/* Hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://picsum.photos/1200/800?blur=2') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  letter-spacing: .1em;
+}
+.hero h2 {
+  font-weight: 400;
+  opacity: .9;
+  margin: 10px 0;
+}
+.hero p {
+  opacity: .8;
+  margin-bottom: 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #2d9ad4;
+}
+
+/* Conteúdo */
 .container {
-    text-align: center;
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 20px;
 }
-
-header {
-    margin-bottom: 35px;
+section {
+  margin: 60px 0;
 }
-
-.line {
-    width: 60%;
-    height: 3px;
-    background: #fff;
-    margin: 30px auto 30px auto;
-    opacity: 0.25;
-}
-
-h1 {
-    font-size: 2.5em;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    margin: 0 0 12px 0;
-}
-
 h2 {
-    font-weight: 400;
-    letter-spacing: 0.12em;
-    margin: 15px 0 10px 0;
-    font-size: 1.4em;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  color: var(--accent);
 }
 
-h3 {
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    margin: 10px 0 0 0;
-    font-size: 1em;
-    opacity: 0.8;
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.skills span {
+  background: #232B36;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: .95em;
+  transition: 0.3s;
+}
+.skills span:hover {
+  background: var(--accent);
 }
 
-.intro {
-    margin: 50px 0 28px 0;
-    font-size: 1.08em;
-    letter-spacing: 0.12em;
-    line-height: 1.7em;
-    opacity: 0.97;
+/* Projetos */
+.cards {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+  background: #232B36;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-6px);
+}
+.card h3 {
+  margin: 10px 0;
+}
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.card a:hover {
+  text-decoration: underline;
 }
 
-.competencias, .contato {
-    margin: 35px 0;
+/* Contato */
+.contato p {
+  text-align: center;
+  margin: 8px 0;
+}
+.contato a {
+  color: var(--accent);
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-}
-
-.competencias ul li {
-    font-size: 1.06em;
-    margin: 8px 0;
-    letter-spacing: 0.10em;
-    opacity: 0.95;
-}
-
-.contato p, .contato a {
-    font-size: 1em;
-    letter-spacing: 0.08em;
-    color: #fff;
-    opacity: 0.9;
-    text-decoration: none;
-}
-
-.contato a:hover {
-    text-decoration: underline;
-    opacity: 1;
-}
-
-.continue {
-    margin-top: 45px;
-    font-size: 1.08em;
-    letter-spacing: 0.26em;
-    opacity: 0.7;
-}
-
-.arrow {
-    font-size: 2.2em;
-    display: block;
-    margin-top: 10px;
-}
-
+/* Footer */
 footer {
-    text-align: center;
-    padding: 17px 0;
-    background: #232B36;
-    color: #fff;
-    width: 100%;
-    font-size: 1em;
-    margin-top: 50px;
-    opacity: 0.96;
+  background: #232B36;
+  text-align: center;
+  padding: 15px 0;
+  font-size: .9em;
+  opacity: .9;
 }
 
+/* Responsivo */
 @media (max-width: 700px) {
-    .container { padding: 10px 5px 60px 5px; }
-    h1 { font-size: 1.5em; }
-    h2 { font-size: 1.1em; }
-    .arrow { font-size: 1.3em; }
+  .hero h1 { font-size: 1.7rem; }
+  .hero h2 { font-size: 1.1rem; }
 }
