@@ -18,7 +18,8 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364),
+              url('https://picsum.photos/1920/1080?blur=2') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,6 +43,7 @@ body {
   font-weight: 400;
   opacity: .9;
   margin-bottom: 25px;
+  color: var(--accent);
 }
 .btn {
   display: inline-block;
@@ -120,6 +122,18 @@ h2 {
 }
 .card a:hover {
   text-decoration: underline;
+}
+
+/* Certificações */
+.certificacoes ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.certificacoes li {
+  margin: 8px 0;
+  font-size: 1.05em;
+  opacity: 0.9;
 }
 
 /* Contato */
