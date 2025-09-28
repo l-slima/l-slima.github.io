@@ -19,7 +19,7 @@ body {
   position: relative;
   height: 100vh;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364),
-            url('https://source.unsplash.com/random/1920x1080/?math,geometry,algebra') center/cover no-repeat;
+            url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,12 +138,24 @@ h2 {
 }
 
 /* Contato */
-.contato p {
+.contato {
   text-align: center;
-  margin: 8px 0;
+  margin-top: 40px;
 }
+
+.contato p {
+  margin: 12px 0;
+  font-size: 1.05em;
+}
+
 .contato a {
   color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contato a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
