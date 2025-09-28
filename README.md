@@ -1,19 +1,21 @@
 # Lucas de Souza Lima
 
-Bem-vindo ao meu repositório!
+Welcome to my repository!
 
-## Sobre mim
+## About Me
 
-Meu nome é Lucas de Souza Lima. Sou mestre e bacharel em Matemática pela UNESP. Atualmente, sou doutorando em Matemática pela USP e também faço MBA em Finanças e Controladoria pela USP-ESALQ.
+My name is Lucas de Souza Lima. I hold both a Bachelor’s and a Master’s degree in Mathematics from UNESP. I am currently pursuing a PhD in Mathematics at USP and also an MBA in Finance and Controllership at USP-ESALQ.
 
-## Competências
+## Skills
 
-- Sólido conhecimento em Python, R, C e algoritmos de Machine Learning
-- Inglês avançado
-- Grande conhecimento em Finanças
-- Adaptação rápida ao ambiente
-- Facilidade em aprender
+* Strong knowledge of Python, R, C, and Machine Learning algorithms
+* Advanced English
+* Extensive knowledge in Finance
+* Quick adaptability to new environments
+* Fast learner
 
-## Contato
+## Contact
 
-Fique à vontade para explorar o repositório e entrar em contato para colaborações ou dúvidas!
+Feel free to explore the repository and reach out for collaborations or questions!
+
+---
